@@ -1,0 +1,35 @@
+{
+  "name": "simple-to-do",
+  "productName": "Simple",
+  "version": "1.0.0",
+  "description": "Simple is the simplest, yet amazing to-do application.",
+  "copyright": "Copyright © 2024 ${author}",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "publish": "electron-forge publish",
+    "lint": "echo \"No linting configured\""
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "^7.4.0",
+    "@electron-forge/maker-deb": "^7.4.0",
+    "@electron-forge/maker-rpm": "^7.4.0",
+    "@electron-forge/maker-squirrel": "^7.4.0",
+    "@electron-forge/maker-zip": "^7.4.0",
+    "@electron-forge/plugin-auto-unpack-natives": "^7.4.0",
+    "@electron-forge/plugin-fuses": "^7.4.0",
+    "@electron/fuses": "^1.8.0",
+    "electron": "31.1.0"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Jakub Barszcz",
+    "email": "j.barszcz@op.pl"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "electron-squirrel-startup": "^1.0.1"
+  }
+}

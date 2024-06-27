@@ -1,0 +1,29 @@
+:root {
+    --borders: #5c5c5c;
+    --superbright: #333333;
+    --brighter: #232323;
+    --darker: #000000;
+    --text: #ffffff;
+}
+
+body {
+    color: white;
+    /*background: linear-gradient(130deg, var(--darker) 0%, var(--brighter) 100%);*/
+    background-color: var(--darker);
+}
+.leftmenu {
+    border-right: 1px solid var(--borders);
+    margin-right: 2%;
+    width: 24%;
+    background-color: var(--brighter);
+    height: 100%;
+}
+.content {
+    width: 65%;
+    height: 100%;
+    overflow-y: visible;
+}
+hr {
+    border: 0;
+    border-top: 1px solid var(--borders);
+}
