@@ -2,55 +2,51 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Simple</title>
     <link rel="stylesheet" href="index.css" />
-    <link rel="stylesheet" href="css/master.css">
-    <link rel="stylesheet" href="css/dark-mode.css">
+    <link rel="stylesheet" href="css/master.css" />
+    <link rel="stylesheet" href="css/dark-mode.css" />
   </head>
   <body>
-    <div class="top-bar">
-
-    </div>
+    <div class="top-bar"></div>
     <div class="leftmenu">
       <div class="left-menu-top">
-        <img src="" alt="Logo" class="navbar-logo">
+        <img src="" alt="Logo" class="navbar-logo" />
         <p class="navbar-title">Simple</p>
-        <div class="options">
-            <ul class="navbar-options-list">
-                <li><p class="navbar-options-item">Home</p></li>
-                <li><p class="navbar-options-item">Settings</p></li>
-                <li><img src="" alt="" class="navbar-options-profilepic"></li>
-            </ul>
-        </div>
       </div>
-      <hr>
+      <hr />
       <div class="left-menu-list">
-        <ul>
-          <li>Today</li>
-          <li>Planned</li>
-          <li>Finished</li>
-        </ul>
-        <hr>
-        <ul>
-          <li>My list 1</li>
-          <li>My list 2</li>
-          <li>My list 3</li>
-          <li>...</li>
-      </ul>
+        <div class="left-menu-list-item active">📅 Today</div>
+        <div class="left-menu-list-item">♾️ All</div>
+        <div class="left-menu-list-item">✅ Finished</div>
+        <hr />
+        <div class="left-menu-list-item">🌍 My list 1</div>
+        <div class="left-menu-list-item">❤️ My list 2</div>
+        <div class="left-menu-list-item">🍾 My list 3</div>
+      </div>
+      <hr />
+      <div class="options">
+        <div class="navbar-options-list">
+          <div class="left-menu-list-item">⚙️ Settings</div>
+          <div class="left-menu-list-item">👤 Profile</div>
+        </div>
       </div>
     </div>
     <div class="content">
-            <div class="title-and-status">
-                <h1><span class="title-text">Hello, ${name}!</span></h1>
-                <p><span class="sub-text"><span class="doneicon"></span>You have finished all tasks scheduled for today. Good job!</span></p>
-                <hr>
-                <div class="task"></div>
-            </div>
-            <div class="list">
-                
-            </div>
-        </div>
+      <div class="title-and-status">
+        <h1><span class="title-text">Hello, ${name}!</span></h1>
+        <p>
+          <span class="sub-text"
+            ><span class="doneicon"></span>You have finished all tasks scheduled
+            for today. Good job!</span
+          >
+        </p>
+        <hr />
+        <div class="task"></div>
+      </div>
+      <div class="list"></div>
+    </div>
     <script src="js/action.js"></script>
   </body>
 </html>

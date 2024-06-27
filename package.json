@@ -30,6 +30,9 @@
   },
   "license": "MIT",
   "dependencies": {
-    "electron-squirrel-startup": "^1.0.1"
+    "electron-squirrel-startup": "^1.0.1",
+    "pouchdb-adapter-idb": "^9.0.0",
+    "pouchdb-adapter-memory": "^9.0.0",
+    "rxdb": "^12.7.16"
   }
 }
