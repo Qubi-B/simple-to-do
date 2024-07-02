@@ -13,15 +13,10 @@ body {
 }
 .leftmenu {
   border-right: 1px solid var(--borders);
-  margin-right: 2%;
-  width: 24%;
   background-color: var(--brighter);
-  height: 100%;
 }
 .content {
-  width: 65%;
-  height: 100%;
-  overflow-y: visible;
+  
 }
 hr {
   border: 0;

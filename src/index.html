@@ -17,72 +17,25 @@
       </div>
       <hr />
       <div class="left-menu-list">
-        <div
-          class="left-menu-list-item active"
-          id="lmi0"
-          onclick="activateItem('lmi0');"
-        >
-          📅 Today
-        </div>
-        <div
-          class="left-menu-list-item"
-          id="lmi1"
-          onclick="activateItem('lmi1');"
-        >
-          ♾️ All
-        </div>
-        <div
-          class="left-menu-list-item"
-          id="lmi2"
-          onclick="activateItem('lmi2');"
-        >
-          ✅ Finished
-        </div>
+        <div class="left-menu-list-item" id="lmi0" onclick="updateMenu(0);">📅 Today</div>
+        <div class="left-menu-list-item" id="lmi1" onclick="updateMenu(1);">♾️ All</div>
+        <div class="left-menu-list-item" id="lmi2" onclick="updateMenu(2);">✅ Finished</div>
         <hr />
-        <div
-          class="left-menu-list-item"
-          id="lmi3"
-          onclick="activateItem('lmi3');"
-        >
-          🌍 My list 1
-        </div>
-        <div
-          class="left-menu-list-item"
-          id="lmi4"
-          onclick="activateItem('lmi4');"
-        >
-          ❤️ My list 2
-        </div>
-        <div
-          class="left-menu-list-item"
-          id="lmi5"
-          onclick="activateItem('lmi5');"
-        >
-          🍾 My list 3
-        </div>
+        <div class="left-menu-list-item" id="lmi3" onclick="updateMenu(3);">🌍 My list 1</div>
+        <div class="left-menu-list-item" id="lmi4" onclick="updateMenu(4);">❤️ My list 2</div>
+        <div class="left-menu-list-item" id="lmi5" onclick="updateMenu(5);">🍾 My list 3</div>
       </div>
       <hr />
       <div class="options">
         <div class="navbar-options-list">
-          <div class="left-menu-list-item">⚙️ Settings</div>
-          <div class="left-menu-list-item">👤 Profile</div>
+          <div class="left-menu-list-item" id="lmi6" onclick="updateMenu(6);">⚙️ Settings</div>
+          <div class="left-menu-list-item" id="lmi7" onclick="updateMenu(7);">👤 Profile</div>
         </div>
       </div>
     </div>
     <div class="content">
-      <div class="title-and-status">
-        <h1><span class="title-text">Hello, ${name}!</span></h1>
-        <p>
-          <span class="sub-text"
-            ><span class="doneicon"></span>You have finished all tasks scheduled
-            for today. Good job!</span
-          >
-        </p>
-        <hr />
-        <div class="task"></div>
-      </div>
-      <div class="list"></div>
-    </div>
+      <iframe id="currentWindow" src="https://onet.pl" frameborder="0"></iframe>
+    </div>  
     <script src="js/action.js"></script>
   </body>
 </html>
